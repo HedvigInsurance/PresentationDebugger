@@ -33,7 +33,11 @@ struct StoreDebuggerContainer: Codable {
 
 class HTTPService {
     private let urlSession = URLSession(configuration: .default)
-    private let baseURLString = "http://localhost:3040"
+    private let baseURLString: String
+    
+    init(host: String) {
+        self.baseURLString = "http://\(host):3040"
+    }
         
     func fetchStores(_ completion: @escaping (StoreDebuggerContainer) -> Void) {
         urlSession.dataTask(with: URLRequest(url: URL(string: "\(baseURLString)/stores")!)) { data, _, _ in

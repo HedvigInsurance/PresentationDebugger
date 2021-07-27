@@ -10,7 +10,11 @@ import Foundation
 class WebSocketService {
     private let urlSession = URLSession(configuration: .default)
     private var webSocketTask: URLSessionWebSocketTask?
-    private let baseURL = URL(string: "ws://localhost:3040/state")!
+    private let baseURL: URL
+    
+    init(host: String) {
+        self.baseURL = URL(string: "ws://\(host):3040/state")!
+    }
     
     func connect(onMessageReceived: @escaping (Result<URLSessionWebSocketTask.Message, Error>) -> Void) {
         stop()

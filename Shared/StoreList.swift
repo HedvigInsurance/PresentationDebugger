@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct StoreList: View {
-    let service = HTTPService()
+    @EnvironmentObject var settings: Settings
     @State var container: StoreDebuggerContainer? = nil
     
     var body: some View {
@@ -27,7 +27,7 @@ struct StoreList: View {
                     }
                 }
             }.listStyle(.inset).onAppear {
-                service.fetchStores { container in
+                settings.httpService.fetchStores { container in
                     self.container = container
                 }
             }

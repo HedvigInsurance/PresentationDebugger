@@ -21,8 +21,7 @@ struct StoreView: View {
         self.selectedAction = representation.actions.first?.name ?? ""
     }
     
-    let service = WebSocketService()
-    let httpService = HTTPService()
+    @EnvironmentObject var settings: Settings
     var representation: StoreDebuggerRepresentation
     @State var currentStoreState: [String: Any] = [:]
     
@@ -74,7 +73,7 @@ struct StoreView: View {
                     // on dismiss
                 } content: { action in
                     SendActionView(representation: representation, action: action) { value in
-                        httpService.sendAction(representation.name, action: [
+                        settings.httpService.sendAction(representation.name, action: [
                             action.name: value
                         ])
                     }
@@ -87,7 +86,7 @@ struct StoreView: View {
             }.padding(20)
         }
         .onAppear {
-            service.connect { result in
+            settings.websocketService.connect { result in
                 if let message = try? result.get() {
                     switch message {
                     case let .string(string):

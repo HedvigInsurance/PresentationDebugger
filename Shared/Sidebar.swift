@@ -28,6 +28,14 @@ struct Sidebar: View {
                     Text("History")
                 }
             }
+            NavigationLink {
+                HostScanner()
+            } label: {
+                HStack {
+                    Image(systemName: "network")
+                    Text("Hosts")
+                }
+            }
         }.listStyle(.sidebar).navigationTitle("Presentation Debugger")
     }
 }

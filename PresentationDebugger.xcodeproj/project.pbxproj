@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EB11F70726A481DC006443DD /* PresentationDebuggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */; };
 		EB11F70826A481DC006443DD /* PresentationDebuggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */; };
-		EB11F70926A481DC006443DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F6FA26A481DA006443DD /* ContentView.swift */; };
-		EB11F70A26A481DC006443DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F6FA26A481DA006443DD /* ContentView.swift */; };
 		EB11F70B26A481DC006443DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11F6FB26A481DC006443DD /* Assets.xcassets */; };
 		EB11F70C26A481DC006443DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11F6FB26A481DC006443DD /* Assets.xcassets */; };
 		EB11F71626A48210006443DD /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71526A48210006443DD /* Sidebar.swift */; };
@@ -25,12 +23,15 @@
 		EB11F72826A48A04006443DD /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72626A48A03006443DD /* StoreView.swift */; };
 		EB11F72A26A4AB58006443DD /* SendActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72926A4AB58006443DD /* SendActionView.swift */; };
 		EB11F72B26A4AB58006443DD /* SendActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72926A4AB58006443DD /* SendActionView.swift */; };
+		EB41E24E26B0473900DED6A4 /* HostScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E24D26B0473900DED6A4 /* HostScanner.swift */; };
+		EB41E24F26B0473900DED6A4 /* HostScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E24D26B0473900DED6A4 /* HostScanner.swift */; };
+		EB41E25126B04B2900DED6A4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E25026B04B2900DED6A4 /* Settings.swift */; };
+		EB41E25226B04B2900DED6A4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E25026B04B2900DED6A4 /* Settings.swift */; };
 		EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDebuggerApp.swift; sourceTree = "<group>"; };
-		EB11F6FA26A481DA006443DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB11F6FB26A481DC006443DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB11F70026A481DC006443DD /* PresentationDebugger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationDebugger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB11F70626A481DC006443DD /* PresentationDebugger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationDebugger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +43,8 @@
 		EB11F72326A48726006443DD /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		EB11F72626A48A03006443DD /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		EB11F72926A4AB58006443DD /* SendActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendActionView.swift; sourceTree = "<group>"; };
+		EB41E24D26B0473900DED6A4 /* HostScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostScanner.swift; sourceTree = "<group>"; };
+		EB41E25026B04B2900DED6A4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +81,6 @@
 			children = (
 				EBE6B7CD26A5EB43009FB4F3 /* History */,
 				EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */,
-				EB11F6FA26A481DA006443DD /* ContentView.swift */,
 				EB11F6FB26A481DC006443DD /* Assets.xcassets */,
 				EB11F71526A48210006443DD /* Sidebar.swift */,
 				EB11F71826A482B0006443DD /* WebSocketService.swift */,
@@ -86,6 +88,8 @@
 				EB11F72326A48726006443DD /* HTTPService.swift */,
 				EB11F72626A48A03006443DD /* StoreView.swift */,
 				EB11F72926A4AB58006443DD /* SendActionView.swift */,
+				EB41E24D26B0473900DED6A4 /* HostScanner.swift */,
+				EB41E25026B04B2900DED6A4 /* Settings.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -205,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB11F70926A481DC006443DD /* ContentView.swift in Sources */,
 				EB11F71E26A484F8006443DD /* StoreList.swift in Sources */,
 				EB11F72A26A4AB58006443DD /* SendActionView.swift in Sources */,
 				EB11F71926A482B0006443DD /* WebSocketService.swift in Sources */,
@@ -213,6 +216,8 @@
 				EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */,
 				EB11F71626A48210006443DD /* Sidebar.swift in Sources */,
 				EB11F72726A48A03006443DD /* StoreView.swift in Sources */,
+				EB41E24E26B0473900DED6A4 /* HostScanner.swift in Sources */,
+				EB41E25126B04B2900DED6A4 /* Settings.swift in Sources */,
 				EB11F70726A481DC006443DD /* PresentationDebuggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB11F70A26A481DC006443DD /* ContentView.swift in Sources */,
+				EB41E24F26B0473900DED6A4 /* HostScanner.swift in Sources */,
 				EB11F71F26A484F8006443DD /* StoreList.swift in Sources */,
 				EB11F72B26A4AB58006443DD /* SendActionView.swift in Sources */,
+				EB41E25226B04B2900DED6A4 /* Settings.swift in Sources */,
 				EB11F71A26A482B0006443DD /* WebSocketService.swift in Sources */,
 				EB11F72526A48726006443DD /* HTTPService.swift in Sources */,
 				EB11F71726A48210006443DD /* Sidebar.swift in Sources */,

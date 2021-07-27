@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct PresentationDebuggerApp: App {
-    let service = WebSocketService()
+    @StateObject var settings = Settings()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                Sidebar()
+                Sidebar().environmentObject(settings)
                 EmptyView()
             }
         }
