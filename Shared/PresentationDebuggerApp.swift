@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct PresentationDebuggerApp: App {
+    let service = WebSocketService()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                Sidebar()
+                EmptyView()
+            }
         }
     }
 }

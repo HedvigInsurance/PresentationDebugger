@@ -13,6 +13,19 @@
 		EB11F70A26A481DC006443DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F6FA26A481DA006443DD /* ContentView.swift */; };
 		EB11F70B26A481DC006443DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11F6FB26A481DC006443DD /* Assets.xcassets */; };
 		EB11F70C26A481DC006443DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11F6FB26A481DC006443DD /* Assets.xcassets */; };
+		EB11F71626A48210006443DD /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71526A48210006443DD /* Sidebar.swift */; };
+		EB11F71726A48210006443DD /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71526A48210006443DD /* Sidebar.swift */; };
+		EB11F71926A482B0006443DD /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71826A482B0006443DD /* WebSocketService.swift */; };
+		EB11F71A26A482B0006443DD /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71826A482B0006443DD /* WebSocketService.swift */; };
+		EB11F71E26A484F8006443DD /* StoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71D26A484F8006443DD /* StoreList.swift */; };
+		EB11F71F26A484F8006443DD /* StoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F71D26A484F8006443DD /* StoreList.swift */; };
+		EB11F72426A48726006443DD /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72326A48726006443DD /* HTTPService.swift */; };
+		EB11F72526A48726006443DD /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72326A48726006443DD /* HTTPService.swift */; };
+		EB11F72726A48A03006443DD /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72626A48A03006443DD /* StoreView.swift */; };
+		EB11F72826A48A04006443DD /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72626A48A03006443DD /* StoreView.swift */; };
+		EB11F72A26A4AB58006443DD /* SendActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72926A4AB58006443DD /* SendActionView.swift */; };
+		EB11F72B26A4AB58006443DD /* SendActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11F72926A4AB58006443DD /* SendActionView.swift */; };
+		EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +34,15 @@
 		EB11F6FB26A481DC006443DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB11F70026A481DC006443DD /* PresentationDebugger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationDebugger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB11F70626A481DC006443DD /* PresentationDebugger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationDebugger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB11F71526A48210006443DD /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		EB11F71826A482B0006443DD /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		EB11F71B26A483B9006443DD /* PresentationDebugger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PresentationDebugger--iOS--Info.plist"; sourceTree = "<group>"; };
+		EB11F71C26A483F0006443DD /* PresentationDebugger (macOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PresentationDebugger (macOS).entitlements"; sourceTree = "<group>"; };
+		EB11F71D26A484F8006443DD /* StoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreList.swift; sourceTree = "<group>"; };
+		EB11F72326A48726006443DD /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		EB11F72626A48A03006443DD /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		EB11F72926A4AB58006443DD /* SendActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendActionView.swift; sourceTree = "<group>"; };
+		EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +66,8 @@
 		EB11F6F326A481DA006443DD = {
 			isa = PBXGroup;
 			children = (
+				EB11F71C26A483F0006443DD /* PresentationDebugger (macOS).entitlements */,
+				EB11F71B26A483B9006443DD /* PresentationDebugger--iOS--Info.plist */,
 				EB11F6F826A481DA006443DD /* Shared */,
 				EB11F70126A481DC006443DD /* Products */,
 			);
@@ -52,9 +76,16 @@
 		EB11F6F826A481DA006443DD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EBE6B7CD26A5EB43009FB4F3 /* History */,
 				EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */,
 				EB11F6FA26A481DA006443DD /* ContentView.swift */,
 				EB11F6FB26A481DC006443DD /* Assets.xcassets */,
+				EB11F71526A48210006443DD /* Sidebar.swift */,
+				EB11F71826A482B0006443DD /* WebSocketService.swift */,
+				EB11F71D26A484F8006443DD /* StoreList.swift */,
+				EB11F72326A48726006443DD /* HTTPService.swift */,
+				EB11F72626A48A03006443DD /* StoreView.swift */,
+				EB11F72926A4AB58006443DD /* SendActionView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -66,6 +97,14 @@
 				EB11F70626A481DC006443DD /* PresentationDebugger.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE6B7CD26A5EB43009FB4F3 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB11F70926A481DC006443DD /* ContentView.swift in Sources */,
+				EB11F71E26A484F8006443DD /* StoreList.swift in Sources */,
+				EB11F72A26A4AB58006443DD /* SendActionView.swift in Sources */,
+				EB11F71926A482B0006443DD /* WebSocketService.swift in Sources */,
+				EB11F72426A48726006443DD /* HTTPService.swift in Sources */,
+				EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */,
+				EB11F71626A48210006443DD /* Sidebar.swift in Sources */,
+				EB11F72726A48A03006443DD /* StoreView.swift in Sources */,
 				EB11F70726A481DC006443DD /* PresentationDebuggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +222,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB11F70A26A481DC006443DD /* ContentView.swift in Sources */,
+				EB11F71F26A484F8006443DD /* StoreList.swift in Sources */,
+				EB11F72B26A4AB58006443DD /* SendActionView.swift in Sources */,
+				EB11F71A26A482B0006443DD /* WebSocketService.swift in Sources */,
+				EB11F72526A48726006443DD /* HTTPService.swift in Sources */,
+				EB11F71726A48210006443DD /* Sidebar.swift in Sources */,
+				EB11F72826A48A04006443DD /* StoreView.swift in Sources */,
 				EB11F70826A481DC006443DD /* PresentationDebuggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +356,7 @@
 				DEVELOPMENT_TEAM = AW656G5PFM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PresentationDebugger--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +387,7 @@
 				DEVELOPMENT_TEAM = AW656G5PFM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PresentationDebugger--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PresentationDebugger (macOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -374,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hedvig.PresentationDebugger;
 				PRODUCT_NAME = PresentationDebugger;
@@ -389,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PresentationDebugger (macOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -403,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hedvig.PresentationDebugger;
 				PRODUCT_NAME = PresentationDebugger;
