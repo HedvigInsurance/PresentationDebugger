@@ -28,6 +28,10 @@
 		EB41E25126B04B2900DED6A4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E25026B04B2900DED6A4 /* Settings.swift */; };
 		EB41E25226B04B2900DED6A4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41E25026B04B2900DED6A4 /* Settings.swift */; };
 		EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */; };
+		EBF12F2226B17F6E004EC3C5 /* NetworkHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF12F2126B17F6E004EC3C5 /* NetworkHistoryList.swift */; };
+		EBF12F2426B1817A004EC3C5 /* NetworkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF12F2326B1817A004EC3C5 /* NetworkDetail.swift */; };
+		EBF12F2526B18274004EC3C5 /* NetworkHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF12F2126B17F6E004EC3C5 /* NetworkHistoryList.swift */; };
+		EBF12F2626B18276004EC3C5 /* NetworkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF12F2326B1817A004EC3C5 /* NetworkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,8 @@
 		EB41E24D26B0473900DED6A4 /* HostScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostScanner.swift; sourceTree = "<group>"; };
 		EB41E25026B04B2900DED6A4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreList.swift; sourceTree = "<group>"; };
+		EBF12F2126B17F6E004EC3C5 /* NetworkHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHistoryList.swift; sourceTree = "<group>"; };
+		EBF12F2326B1817A004EC3C5 /* NetworkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		EB11F6F826A481DA006443DD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EBF12F2026B17F5E004EC3C5 /* Network */,
 				EBE6B7CD26A5EB43009FB4F3 /* History */,
 				EB11F6F926A481DA006443DD /* PresentationDebuggerApp.swift */,
 				EB11F6FB26A481DC006443DD /* Assets.xcassets */,
@@ -109,6 +116,15 @@
 				EBE6B7CE26A5EB50009FB4F3 /* HistoryStoreList.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		EBF12F2026B17F5E004EC3C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EBF12F2126B17F6E004EC3C5 /* NetworkHistoryList.swift */,
+				EBF12F2326B1817A004EC3C5 /* NetworkDetail.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF12F2226B17F6E004EC3C5 /* NetworkHistoryList.swift in Sources */,
 				EB11F71E26A484F8006443DD /* StoreList.swift in Sources */,
 				EB11F72A26A4AB58006443DD /* SendActionView.swift in Sources */,
+				EBF12F2426B1817A004EC3C5 /* NetworkDetail.swift in Sources */,
 				EB11F71926A482B0006443DD /* WebSocketService.swift in Sources */,
 				EB11F72426A48726006443DD /* HTTPService.swift in Sources */,
 				EBE6B7CF26A5EB50009FB4F3 /* HistoryStoreList.swift in Sources */,
@@ -229,8 +247,10 @@
 				EB41E24F26B0473900DED6A4 /* HostScanner.swift in Sources */,
 				EB11F71F26A484F8006443DD /* StoreList.swift in Sources */,
 				EB11F72B26A4AB58006443DD /* SendActionView.swift in Sources */,
+				EBF12F2626B18276004EC3C5 /* NetworkDetail.swift in Sources */,
 				EB41E25226B04B2900DED6A4 /* Settings.swift in Sources */,
 				EB11F71A26A482B0006443DD /* WebSocketService.swift in Sources */,
+				EBF12F2526B18274004EC3C5 /* NetworkHistoryList.swift in Sources */,
 				EB11F72526A48726006443DD /* HTTPService.swift in Sources */,
 				EB11F71726A48210006443DD /* Sidebar.swift in Sources */,
 				EB11F72826A48A04006443DD /* StoreView.swift in Sources */,

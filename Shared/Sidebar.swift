@@ -29,6 +29,14 @@ struct Sidebar: View {
                 }
             }
             NavigationLink {
+                NetworkHistoryList()
+            } label: {
+                HStack {
+                    Image(systemName: "network")
+                    Text("Network History")
+                }
+            }
+            NavigationLink {
                 HostScanner()
             } label: {
                 HStack {
