@@ -16,8 +16,21 @@ struct NetworkDetail: View {
     @State
     var focused: JSONDictionary
     
+    @State
+    var previous = [JSONDictionary]()
+    
     var body: some View {
         List {
+            if !previous.isEmpty {
+                Section {
+                    Button("Back") {
+                        if let previous = previous.popLast() {
+                            focused = previous
+                        }
+                    }
+                }
+            }
+            
             Section {
                 ForEach(focused.keys.sorted() , id: \.self) { key in
                     VStack(alignment: .leading) {
@@ -34,19 +47,21 @@ struct NetworkDetail: View {
                             .padding(5).background(.green)
                             .onTapGesture {
                                 if let newDictionary = dictionary[key] as? JSONDictionary {
-                                    focused = newDictionary
+                                    updateFocus(for: newDictionary)
                                 }
                             }
                         } else if let value = focused[key] as? [JSONDictionary] {
-                            NetworkDetails(dictionaries: value)
-                        } else if let value = focused[key] as? [String:Any] {
+                            NetworkDetails(dictionaries: value) { newDictionary in
+                                updateFocus(for: newDictionary)
+                            }
+                        } else if let newDictionary = focused[key] as? [String:Any] {
                             HStack {
-                                Text(value.debugDescription)
+                                Text(newDictionary.debugDescription)
                                     .foregroundColor(.black)
                             }
                             .padding(5).background(.green)
                             .onTapGesture {
-                                focused = value
+                                updateFocus(for: newDictionary)
                             }
                         }
                     }.padding(5)
@@ -54,16 +69,30 @@ struct NetworkDetail: View {
             }
         }
     }
+    
+    func updateFocus(for dict: JSONDictionary) {
+        let current = focused
+        focused = dict
+        previous.append(current)
+    }
 }
 
 
 struct NetworkDetails: View {
     var dictionaries: [JSONDictionary]
     
+    var onTap: (JSONDictionary) -> Void
+    
     var body: some View {
-        VStack {
-            ForEach(dictionaries) { dict in
-                
+        HStack {
+            ForEach(dictionaries.indices) { index in
+                HStack {
+                    Text(String(index))
+                        .foregroundColor(.black)
+                }.padding(5).background(.red)
+                    .onTapGesture {
+                        onTap(dictionaries[index])
+                    }
             }
         }
     }
