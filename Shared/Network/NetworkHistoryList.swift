@@ -18,7 +18,7 @@ struct NetworkHistoryList: View {
                 if let container = container {
                     ForEach(container.entries) { entry in
                         NavigationLink {
-                           NetworkDetail(entry: entry)
+                            NetworkDetail(dictionary: entry.dictionary, focused: entry.dictionary)
                         } label: {
                             VStack(alignment: .leading) {
                                 HStack {
@@ -37,5 +37,13 @@ struct NetworkHistoryList: View {
                 }
             }.frame(minWidth: 500)
         }
+    }
+}
+
+extension NetworkEntry {
+    var dictionary: [String:Any] {
+        guard let data = response.data(using: .utf8), let dictionary = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] else { return [:]}
+        
+        return dictionary
     }
 }
