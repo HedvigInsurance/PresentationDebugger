@@ -19,6 +19,9 @@ struct NetworkDetail: View {
     @State
     var previous = [JSONDictionary]()
     
+    @State
+    var didCopy = false
+    
     var body: some View {
         List {
             if !previous.isEmpty {
@@ -59,13 +62,34 @@ struct NetworkDetail: View {
                                 Text(newDictionary.debugDescription)
                                     .foregroundColor(.black)
                             }
+                            .frame(maxHeight: 300)
                             .padding(5).background(.green)
                             .onTapGesture {
                                 updateFocus(for: newDictionary)
                             }
+                            .onLongPressGesture(minimumDuration: 0.5) {
+                                copyToClipboard(dict: newDictionary)
+                            }
+                        } else if let arrayValue = focused[key] as? [String] {
+                            HStack {
+                                ForEach(arrayValue, id: \.self) { value in
+                                    Text(value)
+                                        .foregroundColor(.black)
+                                }
+                            }
+                            .padding(5).background(.green)
+                            .onTapGesture {
+                                if let newDictionary = dictionary[key] as? JSONDictionary {
+                                    updateFocus(for: newDictionary)
+                                }
+                            }
                         }
                     }.padding(5)
                 }
+            }
+        }.alert("Copied json", isPresented: $didCopy) {
+            Button("OK", role: .cancel) {
+                didCopy = false
             }
         }
     }
@@ -74,6 +98,13 @@ struct NetworkDetail: View {
         let current = focused
         focused = dict
         previous.append(current)
+    }
+    
+    func copyToClipboard(dict: JSONDictionary) {
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([NSPasteboard.PasteboardType.string], owner: nil)
+        pasteboard.setString(dict.debugDescription, forType: NSPasteboard.PasteboardType.string)
+        didCopy = true
     }
 }
 
